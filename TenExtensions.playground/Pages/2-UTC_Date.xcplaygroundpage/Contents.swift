@@ -23,6 +23,7 @@ extension Date {
 // Implementation
 
 let utcDateString = "2021-04-03T14:00:00.000Z"
-let utcDate = Date.utcDate(from: utcDateString)
+let utcDate = Date.utcDate(from: utcDateString) //Playgrounds will show this in the machine's timezone.
+print(utcDate!)
 
 //: [Next](@next)

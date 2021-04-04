@@ -12,16 +12,19 @@ extension String {
         guard let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue) else {
             return foundUrls
         }
+
         let matches = detector.matches(
             in: self,
             options: [],
             range: NSRange(location: 0, length: self.utf16.count)
         )
+
         for match in matches {
             guard let range = Range(match.range, in: self),
                   let retrievedURL = URL(string: String(self[range])) else { continue }
             foundUrls.append(retrievedURL)
         }
+
         return foundUrls
     }
 }

@@ -39,8 +39,8 @@ extension UIView {
     }
 }
 
-
 // Implementation
+
 class ViewController: UIViewController {
 
     let newView = UIView()

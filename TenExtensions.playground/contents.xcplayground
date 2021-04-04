@@ -10,6 +10,6 @@
         <page name='7-UIStackViewConvInit'/>
         <page name='8-UIColorHex'/>
         <page name='9-UIViewControllerIsDarkMode'/>
-        <page name='10-ConstraintPriority'/>
+        <page name='10-GetLastIndexPath'/>
     </pages>
 </playground>

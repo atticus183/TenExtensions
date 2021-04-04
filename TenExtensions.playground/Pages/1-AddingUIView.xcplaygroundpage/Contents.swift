@@ -49,7 +49,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
 
-        newView.frame = CGRect(x: 0, y: 0, width: 500, height: 500)
         newView.backgroundColor = .systemTeal
         view.addConstrained(subview: newView, top: 50, left: 100, right: -100)
     }

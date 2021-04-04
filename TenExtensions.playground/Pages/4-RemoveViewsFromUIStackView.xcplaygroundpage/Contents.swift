@@ -29,12 +29,12 @@ stackView.addArrangedSubview(view2)
 stackView.addArrangedSubview(view3)
 
 //Confirm stackView contains 3 views
-stackView.arrangedSubviews.count
+stackView.arrangedSubviews.count    //3
 
 //Remove views from stackView
 stackView.removeAllArrangedSubviews()
 
 //Confirm stackView doesn't contain any subviews now
-stackView.arrangedSubviews.count
+stackView.arrangedSubviews.count    //0
 
 //: [Next](@next)

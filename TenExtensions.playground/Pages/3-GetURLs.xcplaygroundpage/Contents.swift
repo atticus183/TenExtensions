@@ -4,9 +4,12 @@ import Foundation
 
 // Extension #3 - Retrieves valid URLs from a given string.
 
+//Credit - Thanks to Paul Hudson for the core functionality on this extension.
+//Source - https://www.hackingwithswift.com/example-code/strings/how-to-detect-a-url-in-a-string-using-nsdatadetector
+
 extension String {
-    /// Searches through a string to find a valid URL.  The method will return the last valid URL in the string.
-    /// - Returns: A the last valid URL or nil.
+    /// Searches through a string to find valid URLs.
+    /// - Returns: An array of found URLs.
     func getURLs() -> [URL] {
         var foundUrls = [URL]()
         guard let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue) else {

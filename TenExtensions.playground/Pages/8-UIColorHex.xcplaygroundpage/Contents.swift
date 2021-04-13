@@ -4,6 +4,8 @@ import UIKit
 
 // Extension #8 - generates a string with the hex color value.
 
+//Inspired by: https://stackoverflow.com/a/26341062
+
 extension UIColor {
     // MARK: - Helper Functions
     /// Returns the hex string for this `UIColor`. For example: `#FFFFFF` or `#222222AB` if the alpha value is included.

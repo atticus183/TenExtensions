@@ -4,6 +4,8 @@ import Foundation
 
 // Extension #2 - Create a date object from a date string with the UTC timezone.
 
+//Inspired by: https://developer.apple.com/library/archive/qa/qa1480/_index.html
+
 extension Date {
     /// Returns a date from the provided string.
     ///
